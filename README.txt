@@ -1,6 +1,13 @@
-1. the executable file of the code is supposed to be used in command line environment;
+1. How to build:
 
-2. the command line has the form: ./WR_Jacobi_Eigen N eivec tr_param
+> mkdir build
+> cd build
+> cmake ..
+> make
+
+2. the executable file of the code is supposed to be used in command line environment;
+
+3. the command line has the form: ./WR_Jacobi_Eigen N eivec tr_param
 where
 
 N is the size of a symmetric square matrix;
@@ -30,11 +37,11 @@ then this matrix has to be written into the file matrix.dat as follows
 
 where first three numbers are the first column of A, second three numbers are the second column of A, etc. 
 
-3) the output of the executable is written in one or two files depending on the parameter eivec. The names
+4. the output of the executable is written in one or two files depending on the parameter eivec. The names
 of the files are
 eigenValues.dat
 eigenVectors.dat
 
-4) Windows users have to make minor changes in the code before trying to compile it. It has to do with paths representation
+5. Windows users have to make minor changes in the code before trying to compile it. It has to do with paths representation
 (using back slashes, c:\ etc.)
 
